@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+}
+
+.container{
+    margin: 3rem 0 0 3rem;
+    /* display: none; */
+}
+
+.container .task{
+    border: 1px solid rgb(179, 179, 179);
+    margin: 1rem; 
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    gap: 0.4rem;
+    width: 30rem;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.add i{
+    font-size: xx-large;
+    color: white;
+}
+
+.icon{
+    margin-left: 25rem;
+    margin-top: -3rem;
+}
+
+.icon i{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+}
+
+.task .task-content .title{
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+.task .task-content{
+    margin-left: 0.5rem;
+}
+
+.add-task{
+    position: absolute;
+    top:10rem;
+    left: 25rem;
+    width: 20rem;
+    height: 20rem;
+    display: none;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.add-task input{
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(114, 114, 114);
+    width: 20rem;
+    height: 35px;
+    padding: 1rem;
+}
+
+.add-task label{
+    font-weight: 900;
+    display: block;
+    margin-top: 20px;
+}
+
+.add-task input:focus{
+    border: 1px solid rgb(118, 249, 118);
+}
+
+.add-task button{
+    width: 20rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+#add-task button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(118, 249, 118);
+}
+
+.back{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+}
